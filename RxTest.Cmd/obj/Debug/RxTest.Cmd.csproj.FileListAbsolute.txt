@@ -1,0 +1,14 @@
+C:\Users\stevenV\documents\visual studio 2013\Projects\RxTest\RxTest.Cmd\bin\Debug\RxTest.Cmd.exe.config
+C:\Users\stevenV\documents\visual studio 2013\Projects\RxTest\RxTest.Cmd\bin\Debug\RxTest.Cmd.exe
+C:\Users\stevenV\documents\visual studio 2013\Projects\RxTest\RxTest.Cmd\bin\Debug\RxTest.Cmd.pdb
+C:\Users\stevenV\documents\visual studio 2013\Projects\RxTest\RxTest.Cmd\bin\Debug\System.Reactive.Core.dll
+C:\Users\stevenV\documents\visual studio 2013\Projects\RxTest\RxTest.Cmd\bin\Debug\System.Reactive.Interfaces.dll
+C:\Users\stevenV\documents\visual studio 2013\Projects\RxTest\RxTest.Cmd\bin\Debug\System.Reactive.Linq.dll
+C:\Users\stevenV\documents\visual studio 2013\Projects\RxTest\RxTest.Cmd\bin\Debug\System.Reactive.PlatformServices.dll
+C:\Users\stevenV\documents\visual studio 2013\Projects\RxTest\RxTest.Cmd\bin\Debug\System.Reactive.Core.xml
+C:\Users\stevenV\documents\visual studio 2013\Projects\RxTest\RxTest.Cmd\bin\Debug\System.Reactive.Interfaces.xml
+C:\Users\stevenV\documents\visual studio 2013\Projects\RxTest\RxTest.Cmd\bin\Debug\System.Reactive.Linq.xml
+C:\Users\stevenV\documents\visual studio 2013\Projects\RxTest\RxTest.Cmd\bin\Debug\System.Reactive.PlatformServices.xml
+C:\Users\stevenV\documents\visual studio 2013\Projects\RxTest\RxTest.Cmd\obj\Debug\RxTest.Cmd.csprojResolveAssemblyReference.cache
+C:\Users\stevenV\documents\visual studio 2013\Projects\RxTest\RxTest.Cmd\obj\Debug\RxTest.Cmd.exe
+C:\Users\stevenV\documents\visual studio 2013\Projects\RxTest\RxTest.Cmd\obj\Debug\RxTest.Cmd.pdb

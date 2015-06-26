@@ -1,0 +1,15 @@
+C:\Users\stevenV\documents\visual studio 2013\Projects\RxTest\RxTest\bin\Debug\RxTest.dll
+C:\Users\stevenV\documents\visual studio 2013\Projects\RxTest\RxTest\bin\Debug\RxTest.pdb
+C:\Users\stevenV\documents\visual studio 2013\Projects\RxTest\RxTest\bin\Debug\ReactiveUI.dll
+C:\Users\stevenV\documents\visual studio 2013\Projects\RxTest\RxTest\bin\Debug\Splat.dll
+C:\Users\stevenV\documents\visual studio 2013\Projects\RxTest\RxTest\bin\Debug\System.Reactive.Core.dll
+C:\Users\stevenV\documents\visual studio 2013\Projects\RxTest\RxTest\bin\Debug\System.Reactive.Interfaces.dll
+C:\Users\stevenV\documents\visual studio 2013\Projects\RxTest\RxTest\bin\Debug\System.Reactive.Linq.dll
+C:\Users\stevenV\documents\visual studio 2013\Projects\RxTest\RxTest\bin\Debug\System.Reactive.PlatformServices.dll
+C:\Users\stevenV\documents\visual studio 2013\Projects\RxTest\RxTest\bin\Debug\ReactiveUI.xml
+C:\Users\stevenV\documents\visual studio 2013\Projects\RxTest\RxTest\bin\Debug\System.Reactive.Core.xml
+C:\Users\stevenV\documents\visual studio 2013\Projects\RxTest\RxTest\bin\Debug\System.Reactive.Interfaces.xml
+C:\Users\stevenV\documents\visual studio 2013\Projects\RxTest\RxTest\bin\Debug\System.Reactive.Linq.xml
+C:\Users\stevenV\documents\visual studio 2013\Projects\RxTest\RxTest\bin\Debug\System.Reactive.PlatformServices.xml
+C:\Users\stevenV\documents\visual studio 2013\Projects\RxTest\RxTest\obj\Debug\RxTest.dll
+C:\Users\stevenV\documents\visual studio 2013\Projects\RxTest\RxTest\obj\Debug\RxTest.pdb
