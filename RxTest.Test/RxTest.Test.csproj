@@ -84,7 +84,7 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
-    <Compile Include="FlikrImageServiceTest.cs" />
+    <Compile Include="FlickrImageServiceTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

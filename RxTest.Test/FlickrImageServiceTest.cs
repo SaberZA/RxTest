@@ -8,7 +8,7 @@ using ReactiveUI;
 namespace RxTest.Test
 {
     [TestFixture]
-    public class FlikrImageServiceTest
+    public class FlickrImageServiceTest
     {
         [Test]
         public void ConstructFlikrImageService_GivenEmptyString_ShouldBuildFlikrImageService()
@@ -18,28 +18,29 @@ namespace RxTest.Test
             //---------------Assert Precondition----------------
 
             //---------------Execute Test ----------------------
-            var flikrImageService = new FlickrImageService();
+            var flickrImageService = new FlickrImageService();
             //---------------Test Result -----------------------
-            Assert.IsNotNull(flikrImageService);
+            Assert.IsNotNull(flickrImageService);
         }
 
         [Test]
-        public void GetImages_GivenSearchTerm_ShouldReturnGreaterThan0()
+        public async void GetImages_GivenSearchTerm_ShouldReturnGreaterThan0()
         {
             //---------------Set up test pack-------------------
-            var flikrImageService = new FlickrImageService();
+            var flickrImageService = new FlickrImageService();
             
             //---------------Assert Precondition----------------
 
             //---------------Execute Test ----------------------
-            //var searchResultViewModel = await flikrImageService.GetImages("cats");
-            var flikrSearchViewModel = new FlickrSearchViewModel(flikrImageService);
-            flikrSearchViewModel.Search.Subscribe(_ =>
-            {
-                Debug.WriteLine(flikrSearchViewModel.Images.Count);
-            });
+            //var searchResultViewModel = await flickrImageService.GetImages("cats");
+            //Assert.IsNotNull(searchResultViewModel);
+            var flickrSearchViewModel = new FlickrSearchViewModel(flickrImageService);
+            flickrSearchViewModel.Search.Subscribe(x => Debug.WriteLine("*****\n"+x.Title),
+                () => Debug.WriteLine("Sequence Completed."));
+
+            await flickrSearchViewModel.Search.ExecuteAsync();
             //---------------Test Result -----------------------
-            //Thread.Sleep(5000);
+            Assert.IsTrue(flickrSearchViewModel.Images.Count > 0);
         }
     }
 }
