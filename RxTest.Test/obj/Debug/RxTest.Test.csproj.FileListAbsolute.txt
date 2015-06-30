@@ -25,30 +25,3 @@ C:\Users\stevenV\documents\visual studio 2013\Projects\RxTest\RxTest.Test\bin\De
 C:\Users\stevenV\documents\visual studio 2013\Projects\RxTest\RxTest.Test\bin\Debug\ReactiveUI.Testing.xml
 C:\Users\stevenV\documents\visual studio 2013\Projects\RxTest\RxTest.Test\bin\Debug\System.Reactive.PlatformServices.xml
 C:\Users\stevenV\documents\visual studio 2013\Projects\RxTest\RxTest.Test\bin\Debug\System.Reactive.Windows.Threading.xml
-C:\Dev\RxTest\RxTest.Test\bin\Debug\RxTest.Test.dll
-C:\Dev\RxTest\RxTest.Test\bin\Debug\RxTest.Test.pdb
-C:\Dev\RxTest\RxTest.Test\bin\Debug\Microsoft.Reactive.Testing.dll
-C:\Dev\RxTest\RxTest.Test\bin\Debug\nunit.framework.dll
-C:\Dev\RxTest\RxTest.Test\bin\Debug\ReactiveUI.dll
-C:\Dev\RxTest\RxTest.Test\bin\Debug\ReactiveUI.Testing.dll
-C:\Dev\RxTest\RxTest.Test\bin\Debug\RxTest.dll
-C:\Dev\RxTest\RxTest.Test\bin\Debug\Splat.dll
-C:\Dev\RxTest\RxTest.Test\bin\Debug\System.Reactive.Core.dll
-C:\Dev\RxTest\RxTest.Test\bin\Debug\System.Reactive.Interfaces.dll
-C:\Dev\RxTest\RxTest.Test\bin\Debug\System.Reactive.Linq.dll
-C:\Dev\RxTest\RxTest.Test\bin\Debug\System.Reactive.PlatformServices.dll
-C:\Dev\RxTest\RxTest.Test\bin\Debug\System.Reactive.Windows.Threading.dll
-C:\Dev\RxTest\RxTest.Test\bin\Debug\RxTest.pdb
-C:\Dev\RxTest\RxTest.Test\bin\Debug\Microsoft.Reactive.Testing.xml
-C:\Dev\RxTest\RxTest.Test\bin\Debug\nunit.framework.xml
-C:\Dev\RxTest\RxTest.Test\bin\Debug\ReactiveUI.xml
-C:\Dev\RxTest\RxTest.Test\bin\Debug\ReactiveUI.Testing.xml
-C:\Dev\RxTest\RxTest.Test\bin\Debug\Splat.pdb
-C:\Dev\RxTest\RxTest.Test\bin\Debug\System.Reactive.Core.xml
-C:\Dev\RxTest\RxTest.Test\bin\Debug\System.Reactive.Interfaces.xml
-C:\Dev\RxTest\RxTest.Test\bin\Debug\System.Reactive.Linq.xml
-C:\Dev\RxTest\RxTest.Test\bin\Debug\System.Reactive.PlatformServices.xml
-C:\Dev\RxTest\RxTest.Test\bin\Debug\System.Reactive.Windows.Threading.xml
-C:\Dev\RxTest\RxTest.Test\obj\Debug\RxTest.Test.csprojResolveAssemblyReference.cache
-C:\Dev\RxTest\RxTest.Test\obj\Debug\RxTest.Test.dll
-C:\Dev\RxTest\RxTest.Test\obj\Debug\RxTest.Test.pdb

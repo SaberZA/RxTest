@@ -80,17 +80,14 @@ namespace RxTest.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f080004
-			public const int cancelButton = 2131230724;
-			
 			// aapt resource value: 0x7f080000
 			public const int image = 2131230720;
 			
-			// aapt resource value: 0x7f080005
-			public const int imagesList = 2131230725;
+			// aapt resource value: 0x7f080004
+			public const int imagesList = 2131230724;
 			
-			// aapt resource value: 0x7f080006
-			public const int loading = 2131230726;
+			// aapt resource value: 0x7f080005
+			public const int loading = 2131230725;
 			
 			// aapt resource value: 0x7f080003
 			public const int searchButton = 2131230723;

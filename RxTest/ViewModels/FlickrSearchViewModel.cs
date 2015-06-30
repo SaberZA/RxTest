@@ -15,24 +15,12 @@ namespace RxTest
             Images = new ReactiveList<SearchResultViewModel>();
 
             CreateSearchCommand(imageService);
-            CreateCancelCommand();
 
             _isLoading = Search.IsExecuting.ToProperty(this, vm => vm.IsLoading);
 
             _canEnterSearchText = this.WhenAnyValue(x => x.IsLoading)
                 .Select(x => !x)
                 .ToProperty(this, vm => vm.CanEnterSearchText);
-        }
-
-        private void CreateCancelCommand()
-        {
-            Cancel = ReactiveCommand.CreateAsyncObservable(_canEnterSearchText,
-                _ =>
-                {
-                    ShowError = false;
-                    Search.Dispose();
-                    return null;
-                });
         }
 
         private void CreateSearchCommand(IImageService imageService)

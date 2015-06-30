@@ -29,34 +29,3 @@ C:\Users\stevenV\documents\visual studio 2013\Projects\RxTest\RxTest.Wpf\obj\Deb
 C:\Users\stevenV\documents\visual studio 2013\Projects\RxTest\RxTest.Wpf\obj\Debug\RxTest.Wpf.csproj.GenerateResource.Cache
 C:\Users\stevenV\documents\visual studio 2013\Projects\RxTest\RxTest.Wpf\obj\Debug\RxTest.Wpf.exe
 C:\Users\stevenV\documents\visual studio 2013\Projects\RxTest\RxTest.Wpf\obj\Debug\RxTest.Wpf.pdb
-C:\Dev\RxTest\RxTest.Wpf\bin\Debug\RxTest.Wpf.exe.config
-C:\Dev\RxTest\RxTest.Wpf\bin\Debug\RxTest.Wpf.exe
-C:\Dev\RxTest\RxTest.Wpf\bin\Debug\RxTest.Wpf.pdb
-C:\Dev\RxTest\RxTest.Wpf\bin\Debug\ReactiveUI.dll
-C:\Dev\RxTest\RxTest.Wpf\bin\Debug\RxTest.dll
-C:\Dev\RxTest\RxTest.Wpf\bin\Debug\Splat.dll
-C:\Dev\RxTest\RxTest.Wpf\bin\Debug\System.Reactive.Core.dll
-C:\Dev\RxTest\RxTest.Wpf\bin\Debug\System.Reactive.Interfaces.dll
-C:\Dev\RxTest\RxTest.Wpf\bin\Debug\System.Reactive.Linq.dll
-C:\Dev\RxTest\RxTest.Wpf\bin\Debug\System.Reactive.PlatformServices.dll
-C:\Dev\RxTest\RxTest.Wpf\bin\Debug\System.Reactive.Windows.Threading.dll
-C:\Dev\RxTest\RxTest.Wpf\bin\Debug\RxTest.pdb
-C:\Dev\RxTest\RxTest.Wpf\bin\Debug\ReactiveUI.xml
-C:\Dev\RxTest\RxTest.Wpf\bin\Debug\Splat.pdb
-C:\Dev\RxTest\RxTest.Wpf\bin\Debug\System.Reactive.Core.xml
-C:\Dev\RxTest\RxTest.Wpf\bin\Debug\System.Reactive.Interfaces.xml
-C:\Dev\RxTest\RxTest.Wpf\bin\Debug\System.Reactive.Linq.xml
-C:\Dev\RxTest\RxTest.Wpf\bin\Debug\System.Reactive.PlatformServices.xml
-C:\Dev\RxTest\RxTest.Wpf\bin\Debug\System.Reactive.Windows.Threading.xml
-C:\Dev\RxTest\RxTest.Wpf\obj\Debug\RxTest.Wpf.csprojResolveAssemblyReference.cache
-C:\Dev\RxTest\RxTest.Wpf\obj\Debug\MainWindow.g.cs
-C:\Dev\RxTest\RxTest.Wpf\obj\Debug\App.g.cs
-C:\Dev\RxTest\RxTest.Wpf\obj\Debug\GeneratedInternalTypeHelper.g.cs
-C:\Dev\RxTest\RxTest.Wpf\obj\Debug\RxTest.Wpf_MarkupCompile.cache
-C:\Dev\RxTest\RxTest.Wpf\obj\Debug\RxTest.Wpf_MarkupCompile.lref
-C:\Dev\RxTest\RxTest.Wpf\obj\Debug\MainWindow.baml
-C:\Dev\RxTest\RxTest.Wpf\obj\Debug\RxTest.Wpf.g.resources
-C:\Dev\RxTest\RxTest.Wpf\obj\Debug\RxTest.Wpf.Properties.Resources.resources
-C:\Dev\RxTest\RxTest.Wpf\obj\Debug\RxTest.Wpf.csproj.GenerateResource.Cache
-C:\Dev\RxTest\RxTest.Wpf\obj\Debug\RxTest.Wpf.exe
-C:\Dev\RxTest\RxTest.Wpf\obj\Debug\RxTest.Wpf.pdb

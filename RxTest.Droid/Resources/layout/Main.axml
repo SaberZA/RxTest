@@ -20,11 +20,6 @@
             android:layout_height="48dp"
             android:text="@string/search" />
     </LinearLayout>
-    <Button
-        android:text="Cancel"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/cancelButton" />
     <ListView
         android:id="@+id/imagesList"
         android:layout_width="fill_parent"

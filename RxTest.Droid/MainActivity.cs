@@ -51,7 +51,6 @@ namespace RxTest.Droid
             this.Bind(ViewModel, vm => vm.SearchText, v => v.SearchText.Text);
             this.OneWayBind(ViewModel, vm => vm.CanEnterSearchText, v => v.SearchText.Enabled);
             this.BindCommand(ViewModel, vm => vm.Search, v => v.SearchButton);
-            this.BindCommand(ViewModel, vm => vm.Cancel, v => v.CancelButton);
         }
 
         private void LoadViews()
@@ -60,10 +59,7 @@ namespace RxTest.Droid
             SearchText = FindViewById<EditText>(Resource.Id.searchText);
             SearchButton = FindViewById<Button>(Resource.Id.searchButton);
             ImagesList = FindViewById<ListView>(Resource.Id.imagesList);
-            CancelButton = FindViewById<Button>(Resource.Id.cancelButton);
         }
-
-        public Button CancelButton { get; set; }
 
         private void LoadPrimaryAdapter()
         {
@@ -76,7 +72,7 @@ namespace RxTest.Droid
         private void LoadErrorDisplay()
         {
             this.WhenAnyValue(v => v.ViewModel.ShowError)
-                //.Where(x => x)
+                .Where(x => x)
                 .Subscribe(showError =>
                 {
                     Toast.MakeText(this, "Could not load image data", ToastLength.Long)
