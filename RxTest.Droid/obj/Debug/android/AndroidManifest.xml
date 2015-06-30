@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="RxTest.Droid" android:versionCode="1" android:versionName="1.0">
   <uses-sdk android:minSdkVersion="11" />
   <application android:label="RxTest.Droid" android:icon="@drawable/icon" android:name="mono.android.app.Application" android:debuggable="true">
-    <activity android:icon="@drawable/icon" android:label="RxTest.Droid" android:name="md546cc5954603d3e446777ae6c2252869f.MainActivity">
+    <activity android:icon="@drawable/icon" android:label="RxTest.Droid" android:windowSoftInputMode="stateAlwaysHidden|adjustUnspecified" android:name="md546cc5954603d3e446777ae6c2252869f.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

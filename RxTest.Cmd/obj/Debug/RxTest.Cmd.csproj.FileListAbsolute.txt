@@ -23,5 +23,6 @@ C:\Dev\RxTest\RxTest.Cmd\bin\Debug\System.Reactive.Core.xml
 C:\Dev\RxTest\RxTest.Cmd\bin\Debug\System.Reactive.Interfaces.xml
 C:\Dev\RxTest\RxTest.Cmd\bin\Debug\System.Reactive.Linq.xml
 C:\Dev\RxTest\RxTest.Cmd\bin\Debug\System.Reactive.PlatformServices.xml
+C:\Dev\RxTest\RxTest.Cmd\obj\Debug\RxTest.Cmd.csprojResolveAssemblyReference.cache
 C:\Dev\RxTest\RxTest.Cmd\obj\Debug\RxTest.Cmd.exe
 C:\Dev\RxTest\RxTest.Cmd\obj\Debug\RxTest.Cmd.pdb

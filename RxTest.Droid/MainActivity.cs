@@ -10,48 +10,85 @@ using ReactiveUI;
 
 namespace RxTest.Droid
 {
-    [Activity(Label = "RxTest.Droid", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "RxTest.Droid", MainLauncher = true, Icon = "@drawable/icon", WindowSoftInputMode = SoftInput.StateAlwaysHidden)]
     public class MainActivity : ReactiveActivity<FlickrSearchViewModel>
     {
-        public EditText SearchText { get; set; }
-        public Button SearchButton { get; set; }
-        public ListView ImagesList { get; set; }
+        public EditText SearchText { get; private set; }
+        public Button SearchButton { get; private set; }
+        public ListView ImagesList { get; private set; }
 
-        private IMenuItem _loadingItem { get; set; }
-        private ImageView _loadingView { get; set; }
-        
+        private IMenuItem _loadingItem;
+        private ImageView _loadingView;
+
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
 
-            // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
-            //Setup ViewModel
-            var imageService = new FlickrImageService();
-            ViewModel = new FlickrSearchViewModel(imageService);
+            LoadViewModel();
 
-            // Load Views
-            SearchText = FindViewById<EditText>(Resource.Id.editTextSearch);
-            SearchButton = FindViewById<Button>(Resource.Id.buttonSearch);
-            ImagesList = FindViewById<ListView>(Resource.Id.listViewImages);
+            LoadViews();
 
+            LoadBindings();
+
+            LoadPrimaryAdapter();
+
+            LoadAnimation();
+
+            LoadErrorDisplay();
+        }
+
+        private void LoadViewModel()
+        {
+            var service = new FlickrImageService();
+            ViewModel = new FlickrSearchViewModel(service);
+        }
+
+        private void LoadBindings()
+        {
             // Set up bindings
             this.Bind(ViewModel, vm => vm.SearchText, v => v.SearchText.Text);
             this.OneWayBind(ViewModel, vm => vm.CanEnterSearchText, v => v.SearchText.Enabled);
             this.BindCommand(ViewModel, vm => vm.Search, v => v.SearchButton);
-            
+            this.BindCommand(ViewModel, vm => vm.Cancel, v => v.CancelButton);
+        }
 
-            //Configure list adapter
+        private void LoadViews()
+        {
+            //load views
+            SearchText = FindViewById<EditText>(Resource.Id.searchText);
+            SearchButton = FindViewById<Button>(Resource.Id.searchButton);
+            ImagesList = FindViewById<ListView>(Resource.Id.imagesList);
+            CancelButton = FindViewById<Button>(Resource.Id.cancelButton);
+        }
+
+        public Button CancelButton { get; set; }
+
+        private void LoadPrimaryAdapter()
+        {
             var adapter = new ReactiveListAdapter<SearchResultViewModel>(
                 ViewModel.Images,
-                (vm, parent) => new ImageItemView(vm, this, parent));
+                (viewModel, parent) => new ImageItemView(viewModel, this, parent));
             ImagesList.Adapter = adapter;
+        }
 
-            // Set up animations
-            //var loadingAnimation = AnimationUtils.LoadAnimation(this, Resource.Animation.loading_rotate);
-            //loadingAnimation.Duration = Animation.Infinite;
-            //loadingAnimation.RepeatMode = RepeatMode.Restart;
+        private void LoadErrorDisplay()
+        {
+            this.WhenAnyValue(v => v.ViewModel.ShowError)
+                //.Where(x => x)
+                .Subscribe(showError =>
+                {
+                    Toast.MakeText(this, "Could not load image data", ToastLength.Long)
+                        .Show();
+                });
+        }
+
+        private void LoadAnimation()
+        {
+            var loadingAnimation = AnimationUtils.LoadAnimation(this, Resource.Animation.loading_rotate);
+            loadingAnimation.RepeatCount = Animation.Infinite;
+            loadingAnimation.RepeatMode = RepeatMode.Restart;
 
             this.WhenAnyValue(v => v.ViewModel.IsLoading)
                 .Subscribe(isLoading =>
@@ -60,29 +97,16 @@ namespace RxTest.Droid
                     {
                         if (isLoading)
                         {
-                            //_loadingView.StartAnimation(loadingAnimation);
-                            Console.WriteLine("Starting animation load...");
+                            _loadingView.StartAnimation(loadingAnimation);
                         }
                         else
                         {
-                            //_loadingView.ClearAnimation();
-                            Console.WriteLine("Ending load animation...");
+                            _loadingView.ClearAnimation();
                         }
 
                         _loadingItem.SetVisible(isLoading);
                     }
                 });
-
-            this.WhenAnyValue(v => v.ViewModel.ShowError)
-                .Where(x => x)
-                .Subscribe(showError =>
-                {
-                    Toast.MakeText(this, "Could not load image data", ToastLength.Long)
-                        .Show();
-                });
-
-
-
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)

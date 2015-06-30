@@ -1,4 +1,3 @@
-C:\Dev\RxTest\RxTest.Droid\obj\Debug\RxTest.Droid.csprojResolveAssemblyReference.cache
 C:\Dev\RxTest\RxTest.Droid\bin\Debug\RxTest.Droid.dll
 C:\Dev\RxTest\RxTest.Droid\bin\Debug\RxTest.Droid.pdb
 C:\Dev\RxTest\RxTest.Droid\bin\Debug\RxTest.Droid.dll.mdb
@@ -20,6 +19,7 @@ C:\Dev\RxTest\RxTest.Droid\bin\Debug\System.Reactive.Core.xml
 C:\Dev\RxTest\RxTest.Droid\bin\Debug\System.Reactive.Interfaces.xml
 C:\Dev\RxTest\RxTest.Droid\bin\Debug\System.Reactive.Linq.xml
 C:\Dev\RxTest\RxTest.Droid\bin\Debug\System.Reactive.PlatformServices.xml
+C:\Dev\RxTest\RxTest.Droid\obj\Debug\RxTest.Droid.csprojResolveAssemblyReference.cache
 C:\Dev\RxTest\RxTest.Droid\obj\Debug\RxTest.Droid.dll
 C:\Dev\RxTest\RxTest.Droid\obj\Debug\RxTest.Droid.pdb
 C:\Dev\RxTest\RxTest.Droid\obj\Debug\android\bin\RxTest.Droid.apk

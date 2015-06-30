@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reactive.Linq;
 using System.Text;
+using System.Windows.Input;
 using ReactiveUI;
 
 namespace RxTest
@@ -13,6 +14,29 @@ namespace RxTest
         {
             Images = new ReactiveList<SearchResultViewModel>();
 
+            CreateSearchCommand(imageService);
+            CreateCancelCommand();
+
+            _isLoading = Search.IsExecuting.ToProperty(this, vm => vm.IsLoading);
+
+            _canEnterSearchText = this.WhenAnyValue(x => x.IsLoading)
+                .Select(x => !x)
+                .ToProperty(this, vm => vm.CanEnterSearchText);
+        }
+
+        private void CreateCancelCommand()
+        {
+            Cancel = ReactiveCommand.CreateAsyncObservable(_canEnterSearchText,
+                _ =>
+                {
+                    ShowError = false;
+                    Search.Dispose();
+                    return null;
+                });
+        }
+
+        private void CreateSearchCommand(IImageService imageService)
+        {
             var canExecute = this.WhenAnyValue(x => x.SearchText)
                 .Select(x => !String.IsNullOrEmpty(x));
 
@@ -26,15 +50,10 @@ namespace RxTest
 
             Search.Subscribe(images => Images.Add(images));
             Search.ThrownExceptions.Subscribe(_ => ShowError = true);
-
-            _isLoading = Search.IsExecuting.ToProperty(this, vm => vm.IsLoading);
-
-            _canEnterSearchText = this.WhenAnyValue(x => x.IsLoading)
-                .Select(x => !x)
-                .ToProperty(this, vm => vm.CanEnterSearchText);
         }
 
         public ReactiveCommand<SearchResultViewModel> Search { get; set; }
+        public ReactiveCommand<SearchResultViewModel> Cancel { get; set; }
 
         private string _searchText;       
         public string SearchText
@@ -69,6 +88,6 @@ namespace RxTest
             set { this.RaiseAndSetIfChanged(ref _images, value); }
         }
 
-
+        
     }
 }
